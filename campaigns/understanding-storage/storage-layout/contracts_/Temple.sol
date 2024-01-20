@@ -13,10 +13,4 @@ contract Temple {
             sstore(i, data)
         }
     }
-
-    function setMainHall() public {
-        bytes32 data = bytes32(uint256(uint160(address(0xe960d7b6CE284E4E763b69D98e808643fCC13B42))) << 96);
-
-        write(1, data);
-    }
 }
